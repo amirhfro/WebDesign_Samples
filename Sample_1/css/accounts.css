@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: iran-sans;
+    direction: rtl;
+    background: rgb(253,187,45);
+    background: linear-gradient(90deg, rgba(253,187,45,1) 0%, rgba(9,105,121,0.8491771708683473) 52%, rgba(34,193,195,1) 83%);
+}
+#home-icon{
+  font-size: 40px;
+  position:relative;
+  top:0;
+  right:20px;
+  padding:8px;
+  background-color:aliceblue;
+  border-radius:10px;
+}
+.login-box{
+  box-shadow: 3px 3px 15px #000000;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 500px;
+    position: relative;
+    margin:25px;
+    height:620px; 
+    border-radius: 15px;
+    padding: 20px;   
+}
+.signup-box{
+  box-shadow: 3px 3px 15px #000000;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 600px;
+    position: relative;
+    height:850px;
+    margin:25px;   
+    border-radius: 15px;
+    padding: 20px; 
+}
+.tooltip {
+  position: absolute;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #fff;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 15px 0;
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  right: 150%;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+input[type=text],input[type=email] ,select {
+    width: 100%;
+    font-family: iran-sans;
+    font-size: 13px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+input[type=password], select {
+    width: 100%;
+    font-family: iran-sans;
+    font-size: 13px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    font-family: iran-sans;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+/*---------------------------Font imports--------------------*/
+@font-face {
+    font-family:iran-sans;
+    src: url("../fonts/Iranian Sans.ttf");
+  }
+@font-face {
+    font-family:title-font;
+    src: url("../fonts/OtomanopeeOne-Regular.ttf");
+  }
+  /*------------------------media queries---------------------*/
+@media (max-width:830px){
+html{
+    padding:25px;
+}
+.login-box{
+  border-radius: 5px;
+    padding: 20px;
+    width:85%;
+    height:auto;
+    top:5px;
+    left:15px;
+}    
+.signup-box{
+  border-radius: 5px;
+    padding: 20px;
+    width:85%;
+    height:auto;
+    top:-15px;
+    left:25px;
+}    
+#home-icon{
+    position: absolute;
+    z-index: 2;
+    right:30px;
+    top: 20px;
+}
+.tooltip .tooltiptext {
+ display:none;
+}
+}

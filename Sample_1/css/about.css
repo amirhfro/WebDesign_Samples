@@ -1,0 +1,13 @@
+
+  .about-box{
+    width:70%;
+    margin:25px;
+    margin-bottom: 80px;
+    padding: 25px;
+    height:auto;
+    border-radius: 35px;
+    background:#fff;
+    border:dashed 2px black;
+    position: relative;
+    top:30px;
+}

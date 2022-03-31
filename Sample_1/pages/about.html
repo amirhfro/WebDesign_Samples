@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta charset="http-equiv" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/f080abedde.js" crossorigin="anonymous"></script>
+<title>MyWebsite</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/about.css">
+
+<style>
+    html{background:aliceblue}
+    main{direction:rtl;}
+</style>
+    
+    
+</head>
+    <header>
+        
+        <nav>
+            <ul id="main-nav" class="main-nav">
+                <i href="javascript:void(0);" id="close-btn" onclick="myXFunction()" class="fas fa-times"></i>
+                  <li><a href="../index.html">خانه</a></li>
+                  <li><a href="products.html">محصولات</a></li>
+                  <li><a href="#" target="_top">درباره ما</a></li>
+                  <li><a href="login.html">ورود</a></li>
+                  <li><a href="signup.html">ثبت نام</a></li>
+              </ul>
+            
+        </nav>
+
+        <div class="search-box">
+                    <input  type="text" placeholder="جست و جو کنید...">
+                <div class="search-btn">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+        <h1 style="cursor: pointer;font-family: iran-sans;" onclick="location.href='index.html';">فروشگاه آرتا</h1>
+        <div class="hamburger-menu"><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <span></span>
+            <span></span>
+            <span></span></a>
+          </div>
+    </header><br><br>
+    <body>
+        <main>
+           <h2 style="margin-right: 50px;">قوانین و مقررات آموزشگاه</h2>
+            <div class="about-box">
+                <p>1- با توجه به مجازی بودن کلاس ها، حضور و غیاب از اهمیت بالایی برخوردار بوده و هر جلسه توسط اساتید حضورو غیاب صورت میپذیرد، از این رو هنرجو باید در کلاس ها حضور دائم داشته باشد و 3 جلسه غیبت منجر به حذف درس خواهد شد.</p>
+                <br><p>2- رعایت ادب و احترام متقابل در کلاس ها الزامی است و هرگونه بی حرمتی و عمل خلاف اخلاق بین دانشجویان بار اول با تذکر و در صورت تکرار با اخراج دائم از کلاس پاسخ داده خواهد شد.</p>
+                <br><p>3- هنرجویان مکلفند هنگام ثبت نام نهایی از عکس پروفایلی مطابق با شئونات استفاده کرده و در صورت عدم رعایت پروفایل شما تا زمان حل مشکل مسدود خواهد ماند.</p>
+                <br><p>4- فضای ابری که در اختیار شما قرار داده خواهد شد، فقط برای فایل های درسی و تمارین خواهد بود، لطفا از آپلود فایل های متفرقه خودداری فرمایید.در صورت عدم رعایت پروفایل شما مسدود خواهد شد.</p>
+                <br><p>5- لطفا در هنگام تکمیل اطلاعات پروفایل ثبت نامی خود حداکثر دقت را به عمل آورید، اصلاح اطلاعات توسط خود شما ممکن نیست و در صورت نیاز به اصلاح اطلاعات لطفا با پشتیبانی سایت در ارتباط باشید.</p>
+                <br><p>6- حل تمارین و ارسال برای استاد و شرکت در کوییز ها و امتحانات الزامی است و هرگونه کوتاهی در انجام تمارین کلاسی به کسر نمره منجر خواهد شد.</p>
+            </div>
+        </main>
+        <footer>
+            <p id="about_me" style="width: 50%;"> درباره ما<br>درسال 1400 گروهی ما  با همراهی گروهی از جوانان خوش فکر، تصمیم به احداث شرکتی گرفتیم که در زمینه آموزش و مسائل فرهنگی، بتواند کمک کوچکی به جامعه ایرانی داشته باشد.</p>
+            
+            <p style="position: relative;top:110px;">2022© All Rights Reserved</p>
+            <a href="#" target="_top"><i id="up-btn" class="fas fas fas fa-arrow-up"></i></a>
+        </footer>
+    
+    </body>
+    <script>
+        const searchBtn = document.querySelector(".search-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        const searchInput = document.querySelector("input");
+        const searchBox = document.querySelector(".search-box");
+        searchBtn.onclick = () =>{
+            searchBox.classList.add("active");
+            searchInput.classList.add("active");
+            searchBtn.classList.add("active");
+            cancelBtn.classList.add("active");
+        }
+        cancelBtn.onclick = () =>{
+            searchBox.classList.remove("active");
+            searchInput.classList.remove("active");
+            searchBtn.classList.remove("active");
+            cancelBtn.classList.remove("active");
+        }
+    </script>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("main-nav");
+          if (x.className === "main-nav") {
+            x.className = "topnav-box";
+          } else {
+            x.className = "main-nav";
+          }
+        }
+        function myXFunction(){
+          var x = document.getElementById("main-nav");
+          if (x.className === "topnav-box") {
+            x.className = "main-nav";
+          } else {
+            x.className = "topnav-box";
+          }
+        }
+        </script>
+    </html>
